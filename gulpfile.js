@@ -37,6 +37,11 @@ gulp.task('copy:assets', ['copy:libs'], function() {
     .pipe(gulp.dest('dist'))
 });
 
+gulp.task('copyAssets', function() {
+  return gulp.src(['app/**/*', '!app/**/*.ts'], { base : './' })
+    .pipe(gulp.dest('dist'))
+});
+
 gulp.task('build', ['compile']);
 gulp.task('default', ['build']);
 gulp.task('refresh', ['copy:assets']);
