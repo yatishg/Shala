@@ -24,7 +24,9 @@
       '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
 
       // other libraries
-      'rxjs':                      'npm:rxjs',
+      'rxjs': 'npm:rxjs',
+      'materialize-css': "npm:materialize-css",
+      'angular2-materialize': 'npm:angular2-materialize',
       'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js'
     },
     // packages tells the System loader how to load when no filename and/or no extension
@@ -35,6 +37,14 @@
       },
       rxjs: {
         defaultExtension: 'js'
+      },
+      'materialize-css': { 
+        main: 'js/materialize', 
+        defaultExtension: 'js'
+       },
+      'angular2-materialize': { 
+        main: 'dist/index', 
+        defaultExtension: 'js' 
       }
     }
   });
